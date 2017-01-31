@@ -6,7 +6,7 @@
 Este é um modelo de organização das tarefas do grunt para facilitar o desenvolvimento 
 de projetos que fazem uso do Angular 1.x. 
 
-Este template vem para auxiliar esse público na construção de uma aplicação rápida, robusta e adaptável.
+Este template vem para auxiliar o público da ferramenta na construção de uma aplicação rápida, robusta e adaptável.
 
 Entre as vantagens desse template estão:
 
@@ -21,6 +21,12 @@ Entre as vantagens desse template estão:
 
 Sinta-se livre para baixar e modificar essa arquitetura de acordo com a sua necessidade.
 
+<div align="center">
+    <img 
+        src="/nidorx/ng-lazyload-bundled/raw/master/doc/animation.gif" 
+        alt="Animation" style="max-width:100%;">
+</div>
+![animation](doc/animation.gif)
 
 ## Primeiros passos
 
@@ -33,19 +39,14 @@ Faça a instalação das ferramentas de trabalho:
 5. [Grunt CLI](http://gruntjs.com) — No terminal: `npm install -g grunt-cli`
 
 
-Executando este projeto template:
+Executando o projeto:
 
 1. Adicione este projeto aos favoritos.
+    ![star](doc/star.png)
 2. Faça o download ou clone este repositorio com o git — `git clone https://github.com/h5bp/html5-boilerplate.git`.
-3. No terminal, instalar as dependencias 
-    ```
-    npm install
-    bower install
-    ```
-3. No terminal, executar o projeto
-    ```
-    grunt
-    ```
+    ![clone](doc/clone.png)
+3. No terminal, instalar as dependencias `npm install` e `bower install`
+3. No terminal, executar o projeto `grunt server`
 
 ## Tarefas disponíveis
 
