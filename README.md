@@ -11,7 +11,7 @@ Este template vem para auxiliar o público da ferramenta na construção de uma 
 Entre as vantagens desse template estão:
 
 * Desenvolvimento modular
-* Empacotamento de módulos (scripts, estilos, imagens e webfonts) (ao estilo [webpack])
+* Empacotamento de módulos (scripts, estilos, imagens e webfonts) (ao estilo [webpack](https://webpack.github.io))
 * Carregamento Assíncrono (Lazy loading) de módulos
 * Desenvolvimento ágil
     - Sass
@@ -66,7 +66,7 @@ Usado para gerar os pacotes de distribuição
 Faz a compilação dos arquivos de estilo (sass), empacotamento dos módulos, concatena as dependencias de fornecedores
 e copia os recursos para o diretório de distribuição (dist).
 
-Ao final do processo, os arquivos do diretório `grunt` devem ser usados para publicar a aplicação.
+Ao final do processo, os arquivos do diretório `dist` devem ser usados para publicar a aplicação.
 
 No terminal: `grunt dist`.
 
@@ -82,4 +82,3 @@ No terminal: `grunt dist-server`.
 
 O código está disponível sob a [licença MIT](LICENSE).
 
-[webpack](https://webpack.github.io/)
