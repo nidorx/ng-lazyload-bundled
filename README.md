@@ -42,7 +42,7 @@ Executando o projeto:
 
 1. Adicione este projeto aos favoritos.
     - ![star](doc/star.png)
-2. Faça o download ou clone este repositorio com o git — `git clone https://github.com/h5bp/html5-boilerplate.git`.
+2. Faça o download ou clone este repositorio com o git — `git clone https://github.com/nidorx/ng-lazyload-bundled.git`.
     - ![clone](doc/clone.png)
 3. No terminal, instalar as dependencias `npm install` e `bower install`
 3. No terminal, executar o projeto `grunt server`
