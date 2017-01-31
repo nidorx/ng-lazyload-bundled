@@ -26,7 +26,6 @@ Sinta-se livre para baixar e modificar essa arquitetura de acordo com a sua nece
         src="https://github.com/nidorx/ng-lazyload-bundled/raw/master/doc/animation.gif" 
         alt="Animation" style="max-width:100%;">
 </div>
-![animation](doc/animation.gif)
 
 ## Primeiros passos
 
