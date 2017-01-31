@@ -1,0 +1,50 @@
+
+
+@import "_font-pokemon.scss";
+
+body {
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.poke-details-image{
+    background-size: cover;
+}
+.media-left{
+    @media (max-width: 768px){
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        .poke-details-image{
+            transform: scale(0.7);
+            display: inline-block;
+            margin: 0;
+        }    
+    }
+
+    @media (max-width: 375px){        
+        .poke-details-image{
+            transform: scale(0.6);
+        }    
+    }
+
+    @media (max-width: 320px){        
+        .poke-details-image{
+            transform: scale(0.5);
+        }    
+    }
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: 1px solid #aaa;
+}
+

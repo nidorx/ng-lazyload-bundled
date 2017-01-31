@@ -1,0 +1,14 @@
+{
+    "name": "ng-lazyload-bundled",
+    "version": "1.0.0",
+    "description": "Angular.js 1x + OcLazyLoad + Grunt + Bundled Module",
+    "homepage": "https://github.com/nidorx/ng-lazyload-bundled",
+    "author": "Alex Rodin <contato@alexrodin.info>",
+    "license": "MIT",
+    "dependencies": {
+        "angular": "^1.6.1",
+        "angular-ui-router": "^0.3.2",
+        "oclazyload": "^1.0.9",
+        "bootstrap": "^3.3.7"
+    }
+}

@@ -1,0 +1,22 @@
+
+server:
+    - 'sass:development'
+    - 'includeSource:development'
+    - 'connect:development'
+    - 'watch'
+
+dist:
+    - 'packModules'
+    - 'replace:concat'
+    - 'processhtml:dist'
+    - 'htmlmin:dist'
+    - 'concat:dist_vendor_js'
+    - 'concat:dist_vendor_css'
+    - 'copy:dist_vendor_fonts'
+
+dist-server:
+    - 'dist'
+    - 'connect:dist'
+
+default:
+    - 'server'

@@ -1,0 +1,51 @@
+<div class="jumbotron">
+    <div class="container" >
+        <h1>{{pokemon.name}}</h1>
+        <p>{{pokemon.description}}</p>      
+        <div class="col-md-8 col-md-offset-2">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <span class="media-object poke-details-image"></span>
+                </div>
+                <div class="media-body text-left">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Type</th>
+                                <td>
+                                    <span class="badge" ng-repeat="type in ::pokemon.types">
+                                        {{::type}}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Specie</th>
+                                <td>{{::pokemon.specie}}</td>
+                            </tr>
+                            <tr>
+                                <th>Height</th>
+                                <td>{{::pokemon.height}}</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>{{::pokemon.weight}}</td>
+                            </tr>
+                            <tr>
+                                <th>Abilities</th>
+                                <td>
+                                    <ul class="list-unstyled">
+                                        <li ng-repeat="ability in ::pokemon.abilities">
+                                            <span class="badge">
+                                                {{::ability}}
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

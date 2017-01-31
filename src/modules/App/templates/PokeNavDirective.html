@@ -1,0 +1,30 @@
+<div class="row" >
+    <div class="col-md-4 col-md-offset-2" ng-if="::(pokemonA)">
+        <h2>
+            <i class="{{::pokemonA.icon}}"></i> 
+            {{::pokemonA.name}}
+        </h2>
+        <p>
+            {{::pokemonA.description}}
+        </p>
+        <p>
+            <a class="btn btn-default" role="button" ui-sref="{{::pokemonA.sref}}">
+                Go to {{::pokemonA.name}} &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4" ng-if="::(pokemonB)">
+        <h2>
+            <i class="{{::pokemonB.icon}}"></i> 
+            {{::pokemonB.name}}
+        </h2>
+        <p>
+            {{::pokemonB.description}}
+        </p>
+        <p>
+            <a class="btn btn-default" role="button" ui-sref="{{::pokemonB.sref}}">
+                Go to {{::pokemonB.name}} &raquo;
+            </a>
+        </p>
+    </div>
+</div>

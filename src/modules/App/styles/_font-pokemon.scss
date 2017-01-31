@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'pokemon';
+    src:  url('../fonts/pokemon.eot?u1cklj');
+    src:  url('../fonts/pokemon.eot?u1cklj#iefix') format('embedded-opentype'),
+        url('../fonts/pokemon.ttf?u1cklj') format('truetype'),
+        url('../fonts/pokemon.woff?u1cklj') format('woff'),
+        url('../fonts/pokemon.svg?u1cklj#pokemon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'pokemon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-squirtle:before {
+    content: "\e90b";
+}
+.icon-bulbasaur:before {
+    content: "\e9a4";
+}
+.icon-pikachu:before {
+    content: "\e9b5";
+}
+
