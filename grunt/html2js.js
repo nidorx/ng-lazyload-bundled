@@ -2,7 +2,7 @@
 
 module.exports = {
     options: {
-        base: 'src',
+        base: '<%= srcDir %>',
         module: "ng",
         singleModule: true,
         existingModule: true,

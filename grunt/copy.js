@@ -10,9 +10,9 @@ module.exports = {
         files: [
             {
                 expand: true,
-                cwd: 'src/vendor/bootstrap/dist/fonts/',
+                cwd: '<%= srcDir %>/vendor/bootstrap/dist/fonts/',
                 src: '*',
-                dest: 'dist/vendor/fonts/',
+                dest: '<%= distDir %>/vendor/fonts/',
                 filter: 'isFile'
             }
         ]

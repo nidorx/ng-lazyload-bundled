@@ -10,8 +10,8 @@ module.exports = {
             livereload: '<%= connectLivereload %>',
             open: true,
             base: [
-                'dist', // build
-                'src' // fonte
+                '<%= distDir %>', // build
+                '<%= srcDir %>' // fonte
             ],
             middleware: function (connect, options, middlewares) {
                 // Faz redirect de arquivos SASS para o CSS compilado
@@ -26,13 +26,13 @@ module.exports = {
             }
         }
     },
-    dist: {// Para visualizar 
+    dist: {// Para visualizar
         options: {
             port: '<%= connectPort %>',
             hostname: 'localhost',
             open: true,
             keepalive: true,
-            base: ['dist']
+            base: ['<%= distDir %>']
         }
     }
 };

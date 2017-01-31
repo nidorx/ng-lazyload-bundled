@@ -12,9 +12,9 @@ module.exports = {
         files: [
             {
                 expand: true,
-                cwd: 'src',
-                src: ['modules/**/*.scss'],
-                dest: 'dist',
+                cwd: '<%= srcDir %>',
+                src: ['<%= mdlDir %>/**/*.scss'],
+                dest: '<%= distDir %>',
                 ext: '.css'
             }
         ]

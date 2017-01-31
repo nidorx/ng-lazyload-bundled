@@ -16,6 +16,11 @@ function gruntConfig(grunt) {
     grunt.config.set('connectPort', 9005);
     grunt.config.set('connectLivereload', 35731);
 
+    // Config dirs
+    grunt.config.set('srcDir', 'src');
+    grunt.config.set('mdlDir', 'modules');
+    grunt.config.set('distDir', 'dist');
+
 
     // Configuration of grunt-replace to allow automatic concat of dependencies
     grunt.config.set('replace', (function (config) {

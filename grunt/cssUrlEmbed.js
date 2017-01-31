@@ -2,6 +2,6 @@
 
 module.exports = {
     options: {
-        skipUrlsLargerThan: '500 KB'
+        skipUrlsLargerThan: '100 KB'
     }
 };

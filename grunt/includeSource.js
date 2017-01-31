@@ -2,11 +2,11 @@
 
 module.exports = {
     options: {
-        basePath: 'src'
+        basePath: '<%= srcDir %>'
     },
     development: {
         files: {
-            'dist/index.html': 'src/index.html'
+            '<%= distDir %>/index.html': '<%= srcDir %>/index.html'
         }
     }
 };

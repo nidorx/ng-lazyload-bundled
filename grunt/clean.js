@@ -2,6 +2,6 @@
 
 module.exports = {
     dist:[
-        'dist/**/*'
+        '<%= distDir %>/**/*'
     ]
 };

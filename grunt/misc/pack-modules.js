@@ -5,13 +5,13 @@
 var path = require('path');
 
 // Source code dir
-var SRC_DIR = 'src';
+var SRC_DIR;
 
 // Build dir
-var DIST_DIR = 'dist';
+var DIST_DIR;
 
 // Application modules dir
-var MODL_DIR = 'modules';
+var MODL_DIR;
 
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -23,10 +23,19 @@ var UGLIFY_BUNDLE = true;
 
 
 module.exports = function (grunt) {
+    srcMod.grunt = grunt;
+    destMod.grunt = grunt;
+
+
     /**
      * Dynamic task for the packaging of application modules
      */
     grunt.registerTask("packModules", "Dynamic task for the packaging of application modules (like Webpack)", function () {
+
+        // Get dirs from config
+        SRC_DIR = grunt.config.get('srcDir');
+        DIST_DIR = grunt.config.get('distDir');
+        MODL_DIR = grunt.config.get('mdlDir');
 
         grunt.file.expand(srcMod('*')).forEach(function (dir) {
             packModule(grunt, dir);

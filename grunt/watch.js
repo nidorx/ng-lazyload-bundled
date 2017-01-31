@@ -2,7 +2,7 @@
 
 module.exports = {
     sass: {
-        files: ['src/modules/**/*.scss'],
+        files: ['<%= srcDir %>/<%= mdlDir %>/**/*.scss'],
         tasks: ['sass:development']
     },
     includeSourceNewFiles: {
@@ -11,14 +11,14 @@ module.exports = {
             event: ['added', 'deleted']
         },
         files: [
-            'src/modules/**/*.scss',
-            'src/modules/**/*.js'
+            '<%= srcDir %>/<%= mdlDir %>/**/*.scss',
+            '<%= srcDir %>/<%= mdlDir %>/**/*.js'
         ],
         tasks: ['includeSource:development']
     },
     includeSourceIndex: {
         options: {event: ['changed']},
-        files: ['src/index.html'],
+        files: ['<%= srcDir %>/index.html'],
         tasks: ['includeSource:development']
     },
     livereload: {
@@ -27,9 +27,9 @@ module.exports = {
             event: ['changed']
         },
         files: [
-            'src/modules/**/*',
-            '!src/modules/**/*.scss',
-            'dist/**/*'
+            '<%= srcDir %>/<%= mdlDir %>/**/*',
+            '!<%= srcDir %>/<%= mdlDir %>/**/*.scss',
+            '<%= distDir %>/**/*'
         ]
     }
 };

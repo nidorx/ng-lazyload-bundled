@@ -7,7 +7,7 @@ module.exports = {
     },
     dist: {
         files: {
-            'dist/index.html': 'dist/index.html'
+            '<%= distDir %>/index.html': '<%= distDir %>/index.html'
         }
     }
 };
