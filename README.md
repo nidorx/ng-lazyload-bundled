@@ -77,6 +77,17 @@ Permite executar um servidor utilizando os pacotes de distribuição.
 
 No terminal: `grunt dist-server`.
 
+### clean
+
+Permite limpar o diretório de distribuição. Execute sempre antes de gerar o pacote de distribuição.
+
+No terminal: `grunt clean`.
+
+
+## Perguntas frequentes
+
+Em construção
+
 
 ## Licença
 
